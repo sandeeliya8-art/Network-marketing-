@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurinote Dashboard</title>
+  <style>
+    body {
+      background-color: #006633;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      background-color: #00994d;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #003300;
+      text-align: center;
+    }
+    img.logo {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    .balance {
+      background-color: #00b359;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .balance p {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      background-color: #00cc66;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00e673;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/attachments/Xne4WKK4poBb8dRUJkNSq.jpeg" alt="Aurinote Logo" class="logo">
+    <h2>Welcome to Aurinote</h2>
+
+    <div class="balance">
+      <p><strong>KES Balance:</strong> Ksh 12,500</p>
+      <p><strong>USD Balance:</strong> $105.00</p>
+      <p><strong>Exchange Rate:</strong> 1 USD = Ksh 119.00</p>
+    </div>
+
+    <button onclick="deposit()">Deposit via M-Pesa</button>
+    <button onclick="buyUSD()">Buy USD</button>
+    <button onclick="sellUSD()">Sell USD</button>
+    <button onclick="withdraw()">Withdraw Funds</button>
+  </div>
+
+  <script>
+    function deposit() {
+      alert("Deposit via M-Pesa initiated.");
+      // M-Pesa STK Push logic goes here
+    }
+
+    function buyUSD() {
+      alert("Buying USD at current exchange rate.");
+      // Conversion logic goes here
+    }
+
+    function sellUSD() {
+      alert("Selling USD at current exchange rate.");
+      // Conversion logic goes here
+    }
+
+    function withdraw() {
+      alert("Withdrawal initiated. 5% fee will be deducted.");
+      // Deduct fee and trigger M-Pesa payout
+    }
+  </script>
+</body>
+</html>

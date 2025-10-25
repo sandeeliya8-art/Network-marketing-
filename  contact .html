@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Aurinote</title>
+  <style>
+    body {
+      background-color: #006633;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      background-color: #00994d;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #003300;
+      text-align: center;
+    }
+    img.logo {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #00cc66;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00e673;
+    }
+    .contact-info {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+    .contact-info a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/attachments/Xne4WKK4poBb8dRUJkNSq.jpeg" alt="Aurinote Logo" class="logo">
+    <h2>Contact Us</h2>
+    <form action="mailto:eliassande443@gmail.com" method="POST" enctype="text/plain">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📧 Email: <a href="mailto:eliassande443@gmail.com">eliassande443@gmail.com</a></p>
+      <p>📞 Phone: <a href="tel:+254748712680">+254 748 712 680</a></p>
+    </div>
+  </div>
+</body>
+</html>
